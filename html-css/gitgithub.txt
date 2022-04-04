@@ -1,0 +1,7 @@
+				O QUE É GIT/GITHUB ?
+
+
+
+GIT = é um software que mantém versões do seu site/código dentro do seu computador.
+
+GitHub = é um softaware que vai fazer um backup do seu código dentro do seu computador. 
