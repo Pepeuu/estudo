@@ -17,7 +17,8 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0px;
-            background-color: rgb(126, 226, 171);
+            background-image: url('imagens/wallpaper01.jpg');
+            
         }
         
         h1#fonte {
@@ -34,15 +35,22 @@
 
         header {
             color: white;
-            padding: 5px;;
+            min-width: 150px;
+            padding: 5px;
             background-image: linear-gradient(to bottom, #33e47c, #22392c);     
+        }
+
+        header > p {
+            max-width: 600px;
         }
 
         main {
             background-color: white;
             margin: auto;
             padding: 30px;
-            width: 810px;;
+            min-width: 300px;
+            max-width: 1000px;
+            
             height: auto;
         }
 
@@ -55,12 +63,28 @@
             border-radius: 0px 0px 10px 10px;
         }
 
-        p {
-            ;
-        }
+       
 
         main > a {
             background-color: #83e1ad;
+        }
+
+        main > p {
+            margin: 15px 0px;
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 1em;
+            min-width: 300px;
+        }
+
+        main img {
+            width: 100%;
+        }
+
+        main img.pequena {
+            max-width: 350px;
+            display: block;
+            margin: auto;
         }
 
         strong {
@@ -101,10 +125,21 @@
             word-spacing: 5px;
         }
 
-        iframe {   
-            margin-left: 35px;
-            margin-top: 25px;
-        }
+        div.video {
+    background-color: var(--cor04);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
         
         
 
@@ -148,7 +183,7 @@
         section#videos {
             background-color: #095329;
             height: 500px;
-            width: 870px;
+            width: 1060px;
             margin: auto;
         }
 
@@ -212,7 +247,7 @@
         </article>
         <picture>
             <source media="(min-width: 800px)" srcset="imagens/dan-droids.png" type="image/png">
-            <img src="imagens/dan-droids-pq.png" alt="Robôs droid">
+            <img src="imagens/dan-droids-pq.png" alt="Robôs droid" >
             <legend>Essa primeira versão bizarra foi batizada em homenagem ao seu criador: seriam os <strong>Drandoids</strong></legend>
         </picture>
         <article>
@@ -220,13 +255,13 @@
             <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Rússia <strong> Irina Blok</strong>. também funcionária do Google. ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
         </article>
         <picture>
-            <source media="(min-width: 800px)" srcset="imagens/irina-blok.jpg" type="image/jpg">
-            <img src="imagens/irina-blok-pq.jpg" alt="Criadora do Mascote Android">
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+            <img src="imagens/irina-blok.jpg" alt="Criadora do Mascote Android">
         </picture>
         <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <strong>Bugdroid</strong>, o novo mascote do Android</p>
 
         <div id="centro">
-            <img src="imagens/bugdroid.png" alt="Mascote Android" height="195" width="300">
+            <img src="imagens/bugdroid.png" alt="Mascote Android" height="195" width="300" class="pequena">
         </div>
 
     <article>
@@ -235,9 +270,9 @@
     </section>
 </main>
 
-<section id="videos"> 
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
+<div class="video"> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <main id="border">
     <p id="cabeçalho">Quer aprender mais?</p>
         <section id="corpo">

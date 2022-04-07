@@ -34,7 +34,7 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-image: url('imagens/download.jpg');
     font-family: var(--fonte-padrao);
 }
 
