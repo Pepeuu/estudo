@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Repair App</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="link-imei">IMEI Lookup</a ></li>
+                <li><a href="#" class="link-phone">PHONE Lookup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Computer and Phone Repair Support App</h1>
+    <article>
+        <h2>Device information</h2>
+        <input type="text" name="imei" id="imei" value="Enter IMEI number here">
+        <input type="text" name="brand" id="brand" value="Brand">
+        <input type="text" name="model" id="model" value="Model">
+        <input type="text" name="color" id="color" value="Color">
+    </article>
+
+    <article>
+        <h2>Issues</h2>
+        <label for="front"><input type="checkbox" id="front" value="front">FRONT Screen broken</label>
+
+        <label for="back"><input type="checkbox" id="back" value="back">BACK Screen broken</label>
+
+        <label for="charging"><input type="checkbox" id="charging" value="charging">CHARGING PORT Replacement</label>
+
+        <label for="DIAGNOSIS"><input type="checkbox" id="diagnosis" value="diagnosis">DIAGNOSIS</label>
+
+        <label for="home"><input type="checkbox" id="home" value="home">HOME BUTTON Replacement</label>
+
+        <label for="battery"><input type="checkbox" id="battery" value="battery">BATTERY Replacement</label>
+        
+        <label for="reset"><input type="checkbox" id="reset" value="reset">RESET Device</label>
+
+        <label for="unlock"><input type="checkbox" id="unlock" value="unlock">UNLOCK Device</label>
+
+        <label for="cleaning"><input type="checkbox" id="cleaning" value="cleaning">CLEANING charging port</label>
+    </article>
+
+    <article>
+        <h2>Service Description</h2>
+        <textarea name="" id="" cols="100" rows="10"></textarea>
+    </article>
+
+    <article>
+        <button>CLEAR</button>
+    </article>
+    </main>
+</body>
+</html>
